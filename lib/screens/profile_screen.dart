@@ -59,28 +59,30 @@ class ProfileScreen extends StatelessWidget {
           ],
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            listTile(Icons.person_2_outlined, 'Name', 'Rahul Tamkhane', true),
-            horizontalDivider,
-            listTile(Icons.call, 'Phone Number', '+91 123-456-7890', false),
-            horizontalDivider,
-            listTile(Icons.email_outlined, 'Email', '', true),
-            horizontalDivider,
-            listTile(Icons.person_outline_sharp, 'Gender', 'Male', true),
-            horizontalDivider,
-            listTile(Icons.calendar_month, 'Date of Birth', '', true),
-            horizontalDivider,
-            listTile(
-                Icons.person_2_outlined, 'Member Since', 'Dec 2024', false),
-            horizontalDivider,
-            listTile(Icons.person_2_outlined, 'Emergency Contact', '', false),
-            horizontalDivider,
-          ],
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              listTile(Icons.person_2_outlined, 'Name', 'Rahul Tamkhane', true),
+              horizontalDivider,
+              listTile(Icons.call, 'Phone Number', '+91 123-456-7890', false),
+              horizontalDivider,
+              listTile(Icons.email_outlined, 'Email', '', true),
+              horizontalDivider,
+              listTile(Icons.person_outline_sharp, 'Gender', 'Male', true),
+              horizontalDivider,
+              listTile(Icons.calendar_month, 'Date of Birth', '', true),
+              horizontalDivider,
+              listTile(
+                  Icons.person_2_outlined, 'Member Since', 'Dec 2024', false),
+              horizontalDivider,
+              listTile(Icons.person_2_outlined, 'Emergency Contact', '', false),
+              horizontalDivider,
+            ],
+          ),
         ),
       ),
     );
